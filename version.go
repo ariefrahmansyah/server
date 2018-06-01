@@ -20,7 +20,7 @@ type Version struct {
 func (s *Server) Version(w http.ResponseWriter, r *http.Request) {
 	dec := json.NewEncoder(w)
 
-	if err := dec.Encode(s.options.version); err != nil {
+	if err := dec.Encode(s.options.Version); err != nil {
 		http.Error(w, fmt.Sprintf("error encoding JSON: %s", err), http.StatusInternalServerError)
 	}
 }

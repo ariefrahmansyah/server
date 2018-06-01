@@ -21,7 +21,7 @@ type Options struct {
 	ReadTimeout  time.Duration
 	WriteTimeout time.Duration
 
-	version *Version
+	Version *Version
 }
 
 // Server serves various HTTP endpoints.
